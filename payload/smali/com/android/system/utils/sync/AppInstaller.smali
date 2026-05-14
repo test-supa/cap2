@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/AppInstaller;
+.class public Lcom/android/system/utils/sync/AppInstaller;
 .super Ljava/lang/Object;
 .source "AppInstaller.java"
 

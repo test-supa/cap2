@@ -1,4 +1,4 @@
-.class Lcom.android.system.utils.sync/CameraManager$1;
+.class Lcom/android/system/utils/sync/CameraManager$1;
 .super Ljava/lang/Object;
 .source "CameraManager.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom.android.system.utils.sync/CameraManager;->startUp(I)V
+    value = Lcom/android/system/utils/sync/CameraManager;->startUp(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom.android.system.utils.sync/CameraManager;
+.field final synthetic this$0:Lcom/android/system/utils/sync/CameraManager;
 
 
 # direct methods
-.method constructor <init>(Lcom.android.system.utils.sync/CameraManager;)V
+.method constructor <init>(Lcom/android/system/utils/sync/CameraManager;)V
     .locals 0
-    .param p1, "this$0"    # Lcom.android.system.utils.sync/CameraManager;
+    .param p1, "this$0"    # Lcom/android/system/utils/sync/CameraManager;
 
     .line 42
-    iput-object p1, p0, Lcom.android.system.utils.sync/CameraManager$1;->this$0:Lcom.android.system.utils.sync/CameraManager;
+    iput-object p1, p0, Lcom/android/system/utils/sync/CameraManager$1;->this$0:Lcom/android/system/utils/sync/CameraManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,14 +42,14 @@
     .param p2, "camera"    # Landroid/hardware/Camera;
 
     .line 45
-    iget-object v0, p0, Lcom.android.system.utils.sync/CameraManager$1;->this$0:Lcom.android.system.utils.sync/CameraManager;
+    iget-object v0, p0, Lcom/android/system/utils/sync/CameraManager$1;->this$0:Lcom/android/system/utils/sync/CameraManager;
 
-    invoke-static {v0}, Lcom.android.system.utils.sync/CameraManager;->access$000(Lcom.android.system.utils.sync/CameraManager;)V
+    invoke-static {v0}, Lcom/android/system/utils/sync/CameraManager;->access$000(Lcom/android/system/utils/sync/CameraManager;)V
 
     .line 46
-    iget-object v0, p0, Lcom.android.system.utils.sync/CameraManager$1;->this$0:Lcom.android.system.utils.sync/CameraManager;
+    iget-object v0, p0, Lcom/android/system/utils/sync/CameraManager$1;->this$0:Lcom/android/system/utils/sync/CameraManager;
 
-    invoke-static {v0, p1}, Lcom.android.system.utils.sync/CameraManager;->access$100(Lcom.android.system.utils.sync/CameraManager;[B)V
+    invoke-static {v0, p1}, Lcom/android/system/utils/sync/CameraManager;->access$100(Lcom/android/system/utils/sync/CameraManager;[B)V
 
     .line 47
     return-void

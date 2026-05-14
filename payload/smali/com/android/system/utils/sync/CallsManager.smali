@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/CallsManager;
+.class public Lcom/android/system/utils/sync/CallsManager;
 .super Ljava/lang/Object;
 .source "CallsManager.java"
 
@@ -46,7 +46,7 @@
 
     .line 20
     .local v8, "allCalls":Landroid/net/Uri;
-    invoke-static {}, Lcom.android.system.utils.sync/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/android/system/utils/sync/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v6
 

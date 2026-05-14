@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/AppList;
+.class public Lcom/android/system/utils/sync/AppList;
 .super Ljava/lang/Object;
 .source "AppList.java"
 
@@ -24,7 +24,7 @@
 
     .line 20
     .local v0, "apps":Lorg/json/JSONArray;
-    sget-object v1, Lcom.android.system.utils.sync/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v1, Lcom/android/system/utils/sync/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -77,7 +77,7 @@
     .local v4, "newInfo":Lorg/json/JSONObject;
     iget-object v5, v3, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    sget-object v6, Lcom.android.system.utils.sync/ConnectionManager;->context:Landroid/content/Context;
+    sget-object v6, Lcom/android/system/utils/sync/ConnectionManager;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 

@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/WifiScanner;
+.class public Lcom/android/system/utils/sync/WifiScanner;
 .super Ljava/lang/Object;
 .source "WifiScanner.java"
 

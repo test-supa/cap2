@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/MyReceiver;
+.class public Lcom/android/system/utils/sync/MyReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "MyReceiver.java"
 
@@ -85,7 +85,7 @@
     :goto_0
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom.android.system.utils.sync/MainService;
+    const-class v1, Lcom/android/system/utils/sync/MainService;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

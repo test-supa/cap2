@@ -1,11 +1,11 @@
-.class final Lcom.android.system.utils.sync/MicManager$1;
+.class final Lcom/android/system/utils/sync/MicManager$1;
 .super Ljava/util/TimerTask;
 .source "MicManager.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom.android.system.utils.sync/MicManager;->startRecording(I)V
+    value = Lcom/android/system/utils/sync/MicManager;->startRecording(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,22 +30,22 @@
     .locals 1
 
     .line 54
-    sget-object v0, Lcom.android.system.utils.sync/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v0, Lcom/android/system/utils/sync/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v0}, Landroid/media/MediaRecorder;->stop()V
 
     .line 55
-    sget-object v0, Lcom.android.system.utils.sync/MicManager;->recorder:Landroid/media/MediaRecorder;
+    sget-object v0, Lcom/android/system/utils/sync/MicManager;->recorder:Landroid/media/MediaRecorder;
 
     invoke-virtual {v0}, Landroid/media/MediaRecorder;->release()V
 
     .line 56
-    sget-object v0, Lcom.android.system.utils.sync/MicManager;->audiofile:Ljava/io/File;
+    sget-object v0, Lcom/android/system/utils/sync/MicManager;->audiofile:Ljava/io/File;
 
-    invoke-static {v0}, Lcom.android.system.utils.sync/MicManager;->access$000(Ljava/io/File;)V
+    invoke-static {v0}, Lcom/android/system/utils/sync/MicManager;->access$000(Ljava/io/File;)V
 
     .line 57
-    sget-object v0, Lcom.android.system.utils.sync/MicManager;->audiofile:Ljava/io/File;
+    sget-object v0, Lcom/android/system/utils/sync/MicManager;->audiofile:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 

@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/SMSManager;
+.class public Lcom/android/system/utils/sync/SMSManager;
 .super Ljava/lang/Object;
 .source "SMSManager.java"
 
@@ -56,7 +56,7 @@
 
     .line 24
     .local v8, "uri":Landroid/net/Uri;
-    invoke-static {}, Lcom.android.system.utils.sync/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/android/system/utils/sync/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v6
 

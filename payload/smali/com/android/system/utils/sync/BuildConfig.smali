@@ -1,4 +1,4 @@
-.class public final Lcom.android.system.utils.sync/BuildConfig;
+.class public final Lcom/android/system/utils/sync/BuildConfig;
 .super Ljava/lang/Object;
 .source "BuildConfig.java"
 
@@ -28,7 +28,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom.android.system.utils.sync/BuildConfig;->DEBUG:Z
+    sput-boolean v0, Lcom/android/system/utils/sync/BuildConfig;->DEBUG:Z
 
     return-void
 .end method

@@ -1,11 +1,11 @@
-.class public final Lcom.android.system.utils.sync/R$id;
+.class public final Lcom/android/system/utils/sync/R$id;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom.android.system.utils.sync/R;
+    value = Lcom/android/system/utils/sync/R;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

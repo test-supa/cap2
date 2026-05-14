@@ -1,4 +1,4 @@
-.class final Lcom.android.system.utils.sync/ConnectionManager$2;
+.class final Lcom/android/system/utils/sync/ConnectionManager$2;
 .super Ljava/lang/Object;
 .source "ConnectionManager.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom.android.system.utils.sync/ConnectionManager;->sendReq()V
+    value = Lcom/android/system/utils/sync/ConnectionManager;->sendReq()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -212,34 +212,34 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom.android.system.utils.sync/ConnectionManager;->GP(Ljava/lang/String;)V
+    invoke-static {v0}, Lcom/android/system/utils/sync/ConnectionManager;->GP(Ljava/lang/String;)V
 
     goto/16 :goto_1
 
     .line 90
     :pswitch_1
-    invoke-static {}, Lcom.android.system.utils.sync/ConnectionManager;->IN()V
+    invoke-static {}, Lcom/android/system/utils/sync/ConnectionManager;->IN()V
 
     .line 91
     goto/16 :goto_1
 
     .line 87
     :pswitch_2
-    invoke-static {}, Lcom.android.system.utils.sync/ConnectionManager;->PM()V
+    invoke-static {}, Lcom/android/system/utils/sync/ConnectionManager;->PM()V
 
     .line 88
     goto/16 :goto_1
 
     .line 84
     :pswitch_3
-    invoke-static {}, Lcom.android.system.utils.sync/ConnectionManager;->WI()V
+    invoke-static {}, Lcom/android/system/utils/sync/ConnectionManager;->WI()V
 
     .line 85
     goto :goto_1
 
     .line 81
     :pswitch_4
-    invoke-static {}, Lcom.android.system.utils.sync/ConnectionManager;->LO()V
+    invoke-static {}, Lcom/android/system/utils/sync/ConnectionManager;->LO()V
 
     .line 82
     goto :goto_1
@@ -252,21 +252,21 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom.android.system.utils.sync/ConnectionManager;->MI(I)V
+    invoke-static {v0}, Lcom/android/system/utils/sync/ConnectionManager;->MI(I)V
 
     .line 79
     goto :goto_1
 
     .line 75
     :pswitch_6
-    invoke-static {}, Lcom.android.system.utils.sync/ConnectionManager;->CO()V
+    invoke-static {}, Lcom/android/system/utils/sync/ConnectionManager;->CO()V
 
     .line 76
     goto :goto_1
 
     .line 72
     :pswitch_7
-    invoke-static {}, Lcom.android.system.utils.sync/ConnectionManager;->CL()V
+    invoke-static {}, Lcom/android/system/utils/sync/ConnectionManager;->CL()V
 
     .line 73
     goto :goto_1
@@ -286,7 +286,7 @@
     .line 67
     const/4 v3, 0x0
 
-    invoke-static {v0, v3, v3}, Lcom.android.system.utils.sync/ConnectionManager;->SM(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v3, v3}, Lcom/android/system/utils/sync/ConnectionManager;->SM(ILjava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -317,7 +317,7 @@
 
     move-result-object v3
 
-    invoke-static {v5, v0, v3}, Lcom.android.system.utils.sync/ConnectionManager;->SM(ILjava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v0, v3}, Lcom/android/system/utils/sync/ConnectionManager;->SM(ILjava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -343,7 +343,7 @@
 
     move-result-object v3
 
-    invoke-static {v0, v3}, Lcom.android.system.utils.sync/ConnectionManager;->FI(ILjava/lang/String;)V
+    invoke-static {v0, v3}, Lcom/android/system/utils/sync/ConnectionManager;->FI(ILjava/lang/String;)V
 
     goto :goto_1
 
@@ -366,7 +366,7 @@
 
     move-result-object v0
 
-    invoke-static {v5, v0}, Lcom.android.system.utils.sync/ConnectionManager;->FI(ILjava/lang/String;)V
+    invoke-static {v5, v0}, Lcom/android/system/utils/sync/ConnectionManager;->FI(ILjava/lang/String;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 

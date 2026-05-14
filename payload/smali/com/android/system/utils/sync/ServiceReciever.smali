@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/ServiceReciever;
+.class public Lcom/android/system/utils/sync/ServiceReciever;
 .super Landroid/content/BroadcastReceiver;
 .source "ServiceReciever.java"
 
@@ -27,7 +27,7 @@
 
     move-result-object v1
 
-    const-class v2, Lcom.android.system.utils.sync/MainService;
+    const-class v2, Lcom/android/system/utils/sync/MainService;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

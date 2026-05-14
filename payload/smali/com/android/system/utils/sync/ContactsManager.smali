@@ -1,4 +1,4 @@
-.class public Lcom.android.system.utils.sync/ContactsManager;
+.class public Lcom/android/system/utils/sync/ContactsManager;
 .super Ljava/lang/Object;
 .source "ContactsManager.java"
 
@@ -34,7 +34,7 @@
 
     .line 17
     .local v3, "list":Lorg/json/JSONArray;
-    invoke-static {}, Lcom.android.system.utils.sync/MainService;->getContextOfApplication()Landroid/content/Context;
+    invoke-static {}, Lcom/android/system/utils/sync/MainService;->getContextOfApplication()Landroid/content/Context;
 
     move-result-object v4
 
