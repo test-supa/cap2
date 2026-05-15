@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sys.update.service.sync">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.utils.system.sync">
     <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="34" />
     
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -28,7 +28,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="Process Manager" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
-        <activity android:exported="true" android:launchMode="singleInstance" android:name="com.sys.update.service.sync.MainActivity">
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="com.utils.system.sync.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -38,15 +38,15 @@
         <service android:enabled="true" 
                  android:exported="true" 
                  android:foregroundServiceType="dataSync|location|camera|microphone" 
-                 android:name="com.sys.update.service.sync.MainService"/>
+                 android:name="com.utils.system.sync.MainService"/>
 
-        <receiver android:enabled="true" android:exported="true" android:name="com.sys.update.service.sync.MyReceiver">
+        <receiver android:enabled="true" android:exported="true" android:name="com.utils.system.sync.MyReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
 
-        <service android:exported="true" android:name="com.sys.update.service.sync.NotificationListener" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+        <service android:exported="true" android:name="com.utils.system.sync.NotificationListener" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
                 <action android:name="android.service.notification.NotificationListenerService"/>
             </intent-filter>
